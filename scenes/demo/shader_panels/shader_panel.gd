@@ -19,6 +19,10 @@ extends PanelContainer
 # -- 14 built-in virtual _ready method
 # -- 15 remaining built-in virtual methods
 # -- 16 public methods
+func destroy():
+	print("XXX: ShaderPanel.destroy()")
+	queue_free()
+	
 # -- 17 private methods
 # -- 18 signal listeners
 # -- 19 innerclasses

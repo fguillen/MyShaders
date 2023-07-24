@@ -14,7 +14,7 @@ border_color = Color(0.218882, 0.501598, 0.563027, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hovuh"]
 size = Vector2(896, 1024)
 
-[node name="SadherPanel" type="PanelContainer"]
+[node name="ShaderPanel" type="PanelContainer" groups=["shader_panels"]]
 offset_left = 359.0
 offset_top = 44.0
 offset_right = 1230.0

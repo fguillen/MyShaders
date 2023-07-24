@@ -3,7 +3,7 @@
 class_name PixelateShaderPanel
 
 # -- 03 extends
-extends PanelContainer
+extends ShaderPanel
 
 # -- 04 # docstring
 #
