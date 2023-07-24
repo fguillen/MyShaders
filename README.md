@@ -71,6 +71,10 @@ Postprocessing shader to blend the Screen with a Texture Pattern using any of th
 
 ## Acknowledgements
 
+For the assets:
+
+- https://www.kenney.nl/
+
 For the patterns used in the Pattern Blend demo:
 
 - https://unsplash.com/photos/i0kQM6OdeVc
