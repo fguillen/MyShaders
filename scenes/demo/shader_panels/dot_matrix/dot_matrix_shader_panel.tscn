@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://m242o2508pnw"]
 
-[ext_resource type="PackedScene" uid="uid://dskjctopboxn1" path="res://scenes/demo/shader_panels/sadher_panel.tscn" id="1_wyvgh"]
+[ext_resource type="PackedScene" uid="uid://dskjctopboxn1" path="res://scenes/demo/shader_panels/shader_panel.tscn" id="1_wyvgh"]
 [ext_resource type="Script" path="res://scenes/demo/shader_panels/dot_matrix/dot_matrix_shader_panel.gd" id="2_24uig"]
 [ext_resource type="Shader" path="res://shaders/dot_matrix_postprocessing.gdshader" id="3_rlqhp"]
 

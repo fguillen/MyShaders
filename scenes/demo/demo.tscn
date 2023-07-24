@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ckyvkf6fjmg0h"]
 
 [ext_resource type="PackedScene" uid="uid://dg8gw41ecpqtf" path="res://scenes/fish_tank/fish_tank.tscn" id="1_6jecs"]
-[ext_resource type="PackedScene" uid="uid://cudha5cgm31am" path="res://scenes/demo/shader_panels/pattern_blend/pattern_blend_sadher_panel.tscn" id="2_vb66p"]
+[ext_resource type="PackedScene" uid="uid://cudha5cgm31am" path="res://scenes/demo/shader_panels/pattern_blend/pattern_blend_shader_panel.tscn" id="2_vb66p"]
 [ext_resource type="Texture2D" uid="uid://ci6pbyqrrub66" path="res://scenes/demo/shader_panels/pattern_blend/patterns/pattern_03.jpg" id="3_dglni"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_70trt"]

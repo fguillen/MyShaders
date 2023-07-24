@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cdry63cjs4vjd"]
 
-[ext_resource type="PackedScene" uid="uid://dskjctopboxn1" path="res://scenes/demo/shader_panels/sadher_panel.tscn" id="1_8cuoq"]
+[ext_resource type="PackedScene" uid="uid://dskjctopboxn1" path="res://scenes/demo/shader_panels/shader_panel.tscn" id="1_8cuoq"]
 [ext_resource type="Shader" path="res://shaders/pixelate_postprocessing.gdshader" id="2_agvyd"]
 [ext_resource type="Script" path="res://scenes/demo/shader_panels/pixelate/pixelate_sadher_panel.gd" id="2_nuke4"]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://cudha5cgm31am"]
 
-[ext_resource type="PackedScene" uid="uid://dskjctopboxn1" path="res://scenes/demo/shader_panels/sadher_panel.tscn" id="1_emecw"]
-[ext_resource type="Script" path="res://scenes/demo/shader_panels/pattern_blend/pattern_blend_sadher_panel.gd" id="2_p21lb"]
+[ext_resource type="PackedScene" uid="uid://dskjctopboxn1" path="res://scenes/demo/shader_panels/shader_panel.tscn" id="1_emecw"]
+[ext_resource type="Script" path="res://scenes/demo/shader_panels/pattern_blend/pattern_blend_shader_panel.gd" id="2_p21lb"]
 [ext_resource type="Shader" path="res://shaders/pattern_blend_portprocessing.gdshader" id="3_q4ytg"]
 [ext_resource type="Texture2D" uid="uid://bnk7cy7onyklw" path="res://scenes/demo/shader_panels/pattern_blend/patterns/pattern_01.jpg" id="3_tiyjq"]
 [ext_resource type="Script" path="res://scenes/demo/shader_panels/pattern_blend/named_pattern.gd" id="4_5xss5"]

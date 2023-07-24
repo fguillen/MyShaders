@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dskjctopboxn1"]
+[gd_scene load_steps=5 format=3 uid="uid://dskjctopboxn1"]
 
+[ext_resource type="Script" path="res://scenes/demo/shader_panels/shader_panel.gd" id="1_yspwc"]
 [ext_resource type="Script" path="res://scenes/demo/grabbable_component.gd" id="3_3oc5x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_33h3i"]
@@ -20,6 +21,7 @@ offset_right = 1230.0
 offset_bottom = 1045.0
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_33h3i")
+script = ExtResource("1_yspwc")
 
 [node name="ShaderColorRect" type="ColorRect" parent="."]
 unique_name_in_owner = true
