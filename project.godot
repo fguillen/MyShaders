@@ -28,3 +28,7 @@ movie_writer/movie_file="/Users/fernando.guillen/Downloads/movie_my_shaders.avi"
 [gui]
 
 theme/custom="res://ui/theme.tres"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"

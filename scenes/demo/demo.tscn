@@ -71,5 +71,3 @@ offset_top = -148.0
 offset_right = 3658.0
 offset_bottom = 986.0
 texture = ExtResource("3_dglni")
-
-[editable path="ShaderBoxes/PatternBlendSadherPanel"]
