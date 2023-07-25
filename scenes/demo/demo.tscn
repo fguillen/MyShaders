@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ckyvkf6fjmg0h"]
+[gd_scene load_steps=16 format=3 uid="uid://ckyvkf6fjmg0h"]
 
 [ext_resource type="PackedScene" uid="uid://dg8gw41ecpqtf" path="res://scenes/fish_tank/fish_tank.tscn" id="1_6jecs"]
 [ext_resource type="Script" path="res://scenes/demo/demo.gd" id="1_nyf7l"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dlqg6tyfyqq7j" path="res://scenes/demo/shader_panels/pixelate/pixelate_icon.png" id="5_2giu0"]
 [ext_resource type="PackedScene" uid="uid://m242o2508pnw" path="res://scenes/demo/shader_panels/dot_matrix/dot_matrix_shader_panel.tscn" id="5_t27av"]
 [ext_resource type="PackedScene" uid="uid://dgx66mjs2guud" path="res://scenes/demo/shader_panels/diamond_matrix/diamond_matrix_shader_panel.tscn" id="6_4b5oc"]
+[ext_resource type="Texture2D" uid="uid://88df7rhxwfql" path="res://scenes/demo/shader_panels/dot_matrix/dot_matrix_icon.png" id="7_l0fcq"]
 [ext_resource type="Texture2D" uid="uid://b4mbko63mvxqf" path="res://scenes/demo/shader_panels/diamond_matrix/diamond_matrix_icon.png" id="8_pdj0g"]
 
 [sub_resource type="Resource" id="Resource_cviry"]
@@ -25,6 +26,7 @@ shader_panel = ExtResource("4_33vtw")
 
 [sub_resource type="Resource" id="Resource_gc1l4"]
 script = ExtResource("2_7u4l8")
+icon = ExtResource("7_l0fcq")
 name = "Dot Matrix"
 shader_panel = ExtResource("5_t27av")
 
@@ -79,5 +81,6 @@ text = "Shader"
 [node name="ShaderPanelsOptionButton" type="OptionButton" parent="UICanvasLayer/PanelContainer/MarginContainer/Buttons"]
 unique_name_in_owner = true
 layout_mode = 2
+alignment = 2
 
 [connection signal="item_selected" from="UICanvasLayer/PanelContainer/MarginContainer/Buttons/ShaderPanelsOptionButton" to="." method="_on_shader_panels_option_button_item_selected"]

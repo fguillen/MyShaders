@@ -31,13 +31,20 @@ func _ready():
 # -- 16 public methods
 # -- 17 private methods
 func _init_shader_panels_option_button():
-	for i in shader_panels_named.size():
-		shader_panels_option_button.add_icon_item(shader_panels_named[i].icon, shader_panels_named[i].name, i)
+	shader_panels_option_button.add_item("Choose one")
+	
+	for shader_panel in shader_panels_named:
+		shader_panels_option_button.add_icon_item(shader_panel.icon, shader_panel.name)
 		
 
 func _activate_shader_panel(index: int):
+	print("XXX _activate_shader_panel: ", index)
 	get_tree().call_group("shader_panels", "destroy")
-	var shader_panel = shader_panels_named[index].shader_panel.instantiate()
+	
+	if index == 0:
+		return
+	
+	var shader_panel = shader_panels_named[index - 1].shader_panel.instantiate()
 	shader_panels.add_child(shader_panel)
 	shader_panel.global_position = Vector2(350, 40)
 	
