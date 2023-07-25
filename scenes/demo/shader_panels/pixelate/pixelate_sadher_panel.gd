@@ -24,7 +24,7 @@ extends ShaderPanel
 # -- 14 built-in virtual _ready method
 func _ready():
 	slider.value_changed.connect(_on_slider_value_changed)
-	slider.value = color_rect.material.get_shader_parameter("amount")
+	slider.value = color_rect.material.get_shader_parameter("pixel_size")
 	
 	
 # -- 15 remaining built-in virtual methods
@@ -32,7 +32,7 @@ func _ready():
 # -- 17 private methods
 func _on_slider_value_changed(value: int):
 	value_label.text = "%03d" % value
-	color_rect.material.set_shader_parameter("amount", value)
+	color_rect.material.set_shader_parameter("pixel_size", value)
 	
 	
 # -- 18 signal listeners
