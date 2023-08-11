@@ -1,0 +1,120 @@
+[gd_scene load_steps=6 format=3 uid="uid://kkq3aw3t5t7u"]
+
+[ext_resource type="PackedScene" uid="uid://dskjctopboxn1" path="res://scenes/demo/shader_panels/shader_panel.tscn" id="1_yup6p"]
+[ext_resource type="Script" path="res://scenes/demo/shader_panels/colored_dithering/colored_dithering_sadher_panel.gd" id="2_68bmm"]
+[ext_resource type="Shader" path="res://shaders/colored_dithering_postprocessing.gdshader" id="3_24x7f"]
+[ext_resource type="Texture2D" uid="uid://ccjbg1r4joaqo" path="res://shaders/colored_dithering_texture.png" id="3_mftsy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gkoeo"]
+resource_local_to_scene = true
+shader = ExtResource("3_24x7f")
+shader_parameter/levels = 7
+shader_parameter/threshold = 0.768
+shader_parameter/colors = 5
+shader_parameter/pixelate = 2
+shader_parameter/dither_texture = ExtResource("3_mftsy")
+
+[node name="ColoredDitheringSadherPanel" instance=ExtResource("1_yup6p")]
+script = ExtResource("2_68bmm")
+
+[node name="ShaderColorRect" parent="." index="0"]
+material = SubResource("ShaderMaterial_gkoeo")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls/PanelContainer/MarginContainer" index="0"]
+layout_mode = 2
+
+[node name="Levels" type="HBoxContainer" parent="Controls/PanelContainer/MarginContainer/VBoxContainer" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Levels" index="0"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Levels"
+
+[node name="HSlider" type="HSlider" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Levels" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+min_value = 1.0
+max_value = 16.0
+value = 1.0
+
+[node name="ValueLabel" type="Label" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Levels" index="2"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+text = "000"
+
+[node name="Threshold" type="HBoxContainer" parent="Controls/PanelContainer/MarginContainer/VBoxContainer" index="1"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Threshold" index="0"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Threshold"
+
+[node name="HSlider" type="HSlider" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Threshold" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.0
+step = 0.01
+value = 0.9
+
+[node name="ValueLabel" type="Label" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Threshold" index="2"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+text = "000"
+
+[node name="Colors" type="HBoxContainer" parent="Controls/PanelContainer/MarginContainer/VBoxContainer" index="2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Colors" index="0"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Colors"
+
+[node name="HSlider" type="HSlider" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Colors" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+min_value = 1.0
+max_value = 32.0
+value = 5.0
+
+[node name="ValueLabel" type="Label" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Colors" index="2"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+text = "000"
+
+[node name="Pixelate" type="HBoxContainer" parent="Controls/PanelContainer/MarginContainer/VBoxContainer" index="3"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Pixelate" index="0"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Pixelate"
+
+[node name="HSlider" type="HSlider" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Pixelate" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+min_value = 1.0
+max_value = 10.0
+value = 2.0
+
+[node name="ValueLabel" type="Label" parent="Controls/PanelContainer/MarginContainer/VBoxContainer/Pixelate" index="2"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+text = "000"

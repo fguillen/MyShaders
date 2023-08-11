@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://ckyvkf6fjmg0h"]
+[gd_scene load_steps=19 format=3 uid="uid://ckyvkf6fjmg0h"]
 
 [ext_resource type="PackedScene" uid="uid://dg8gw41ecpqtf" path="res://scenes/fish_tank/fish_tank.tscn" id="1_6jecs"]
 [ext_resource type="Script" path="res://scenes/demo/demo.gd" id="1_nyf7l"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://dgx66mjs2guud" path="res://scenes/demo/shader_panels/diamond_matrix/diamond_matrix_shader_panel.tscn" id="6_4b5oc"]
 [ext_resource type="Texture2D" uid="uid://88df7rhxwfql" path="res://scenes/demo/shader_panels/dot_matrix/dot_matrix_icon.png" id="7_l0fcq"]
 [ext_resource type="Texture2D" uid="uid://b4mbko63mvxqf" path="res://scenes/demo/shader_panels/diamond_matrix/diamond_matrix_icon.png" id="8_pdj0g"]
+[ext_resource type="Texture2D" uid="uid://b2ke7n4f3tx6n" path="res://scenes/demo/shader_panels/colored_dithering/colored_dithering_icon.png" id="11_wkg5c"]
+[ext_resource type="PackedScene" uid="uid://kkq3aw3t5t7u" path="res://scenes/demo/shader_panels/colored_dithering/colored_dithering_sadher_panel.tscn" id="11_yeoka"]
 
 [sub_resource type="Resource" id="Resource_cviry"]
 script = ExtResource("2_7u4l8")
@@ -36,9 +38,15 @@ icon = ExtResource("8_pdj0g")
 name = "Diamond Matrix"
 shader_panel = ExtResource("6_4b5oc")
 
+[sub_resource type="Resource" id="Resource_qp0dq"]
+script = ExtResource("2_7u4l8")
+icon = ExtResource("11_wkg5c")
+name = "Colored Dithering"
+shader_panel = ExtResource("11_yeoka")
+
 [node name="Demo" type="Node2D"]
 script = ExtResource("1_nyf7l")
-shader_panels_named = Array[ExtResource("2_7u4l8")]([SubResource("Resource_cviry"), SubResource("Resource_hyb13"), SubResource("Resource_gc1l4"), SubResource("Resource_455qv")])
+shader_panels_named = Array[ExtResource("2_7u4l8")]([SubResource("Resource_cviry"), SubResource("Resource_hyb13"), SubResource("Resource_gc1l4"), SubResource("Resource_455qv"), SubResource("Resource_qp0dq")])
 
 [node name="FishTank" parent="." instance=ExtResource("1_6jecs")]
 
